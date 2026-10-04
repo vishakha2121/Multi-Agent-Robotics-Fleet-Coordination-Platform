@@ -12163,37 +12163,4 @@ Category	Ignored
 Python	__pycache__, .pyc, venv, .egg-info
 React/Node	node_modules, dist, build, .vite
 Database	*.db, *.sqlite3, fleet.db
-Env	.env, .env.local (secrets safe)
-IDE	.vscode, .idea, *.swp
-OS	.DS_Store, Thumbs.db
-Logs	*.log, logs/
-Testing	.pytest_cache, coverage/
-⚠️ Important Note
-✅ .env.example upload hoga (template ke liye)
-
-❌ .env upload nahi hoga (secrets ke liye — Gemini key safe rahegi)
-
-❌ fleet.db upload nahi hoga (local database)
-
-Agar kabhi force karke kuch upload karna ho:
-
-powershell
-git add -f path/to/file
-📌 Ab Ye Karo
-powershell
-# 1. Root folder me .gitignore file banao
-# 2. Upar wala content paste karo
-# 3. Save karo
-
-# 4. Push karo
-git add .gitignore
-git commit -m "Add .gitignore"
-git push
-Bhai, ab bata — code likhna start karein?
-
-Mera suggestion: Backend pehle (models → agents → routers), phir Frontend (React UI). Bol "next" toh main backend ka pura code file-by-file dunga. 🚀
-
-
-
-
 
